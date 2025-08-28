@@ -1,0 +1,11 @@
+<!-- Muestra el mapa solo en navegador, evita errores con SSR -->
+<div *ngIf="isBrowser; else loading">
+  <!-- Contenedor del mapa (Leaflet dibuja aquí) -->
+  <div id="map" style="height: 500px; width: 100%;"></div>
+</div>
+
+
+<!-- Mensaje alternativo si no se puede renderizar el mapa -->
+<ng-template #loading>
+  <p>Cargando mapa...</p>
+</ng-template>

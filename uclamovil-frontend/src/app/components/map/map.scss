@@ -1,0 +1,12 @@
+:host {
+  display: block; /* hace que el componente ocupe espacio en layout */
+  height: 100vh; /* altura = toda la pantalla */
+  width: 100vw; /* ancho = toda la pantalla */
+}
+
+#map {
+  height: 100%; /* el mapa ocupa todo el alto del host */
+  width: 100%; /* el mapa ocupa todo el ancho del host */
+  overflow: hidden; /* evita scroll dentro del mapa */
+  border-radius: 12px; /* esquinas redondeadas */
+}

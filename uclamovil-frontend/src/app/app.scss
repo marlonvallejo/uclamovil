@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  height: 100vh;   // toda la pantalla
+  width: 100vw;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0;   // evita que se superponga mal
+}
+
